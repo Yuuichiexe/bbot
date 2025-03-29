@@ -22,8 +22,6 @@ from src.modules.utils.play_helpers import (
 )
 from src.pytgcalls import call
 
-start_img = "https://files.catbox.moe/0acz0j.jpg"
-
 @Client.on_message(Filter.command("start"))
 async def start_cmd(c: Client, message: types.Message):
     me: types.User = await c.getMe()
@@ -41,7 +39,7 @@ async def start_cmd(c: Client, message: types.Message):
  Supported platforms like⥮ YouTube, Spotify, Resso, Apple Music, and SoundCloud.
     """
 
-    reply = await message.reply_photo(start_img, text, parse_mode="html", reply_markup=AddMeButton)
+    reply = await message.reply_photo("https://files.catbox.moe/0acz0j.jpg", text, parse_mode="html", reply_markup=AddMeButton)
     if isinstance(reply, types.Error):
         c.logger.warning(f"Error sending start message: {reply.message}")
 
