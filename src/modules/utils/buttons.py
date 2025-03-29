@@ -32,19 +32,17 @@ def play_button(current_seconds: int, total_seconds: int) -> types.ReplyMarkupIn
             ],
             [
                 types.InlineKeyboardButton(
-                    text="▶️ Skip", type=types.InlineKeyboardButtonTypeCallback(b"play_skip")
+                    text="▶️", type=types.InlineKeyboardButtonTypeCallback(b"play_skip")
                 ),
                 types.InlineKeyboardButton(
-                    text="⏹️ End", type=types.InlineKeyboardButtonTypeCallback(b"play_stop")
+                    text="⏹️", type=types.InlineKeyboardButtonTypeCallback(b"play_stop")
                 ),
-            ],
-            [
                 types.InlineKeyboardButton(
-                    text="⏸️ Pause",
+                    text="⏸️",
                     type=types.InlineKeyboardButtonTypeCallback(b"play_pause"),
                 ),
                 types.InlineKeyboardButton(
-                    text="⏯️ Resume",
+                    text="⏯️",
                     type=types.InlineKeyboardButtonTypeCallback(b"play_resume"),
                 ),
             ],
