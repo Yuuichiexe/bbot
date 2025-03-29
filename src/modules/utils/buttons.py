@@ -149,12 +149,12 @@ SupportButton = types.ReplyMarkupInlineKeyboard(
     [
         [
             types.InlineKeyboardButton(
-                text="❄ Channel",
-                type=types.InlineKeyboardButtonTypeUrl("https://t.me/FallenProjects"),
+                text="Support",
+                type=types.InlineKeyboardButtonTypeUrl("https://t.me/Apple_MusicSupport"),
             ),
             types.InlineKeyboardButton(
-                text="✨ Group",
-                type=types.InlineKeyboardButtonTypeUrl("https://t.me/GuardxSupport"),
+                text="Updates",
+                type=types.InlineKeyboardButtonTypeUrl("https://t.me/AppleMusicupdate"),
             ),
         ]
     ]
