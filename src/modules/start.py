@@ -44,7 +44,7 @@ Your ultimate music companion for Telegram voice chats!
 <b>📢 Note:</b> This bot works best in groups and requires admin permissions to function.
     """
 
-    reply = await message.reply_text(text, parse_mode="html", reply_markup=AddMeButton)
+    reply = await message.reply_photo(start_img, text, parse_mode="html", reply_markup=AddMeButton)
     if isinstance(reply, types.Error):
         c.logger.warning(f"Error sending start message: {reply.message}")
 
