@@ -22,7 +22,7 @@ from src.modules.utils.play_helpers import (
 )
 from src.pytgcalls import call
 
-start_img = ""
+start_img = "https://files.catbox.moe/0acz0j.jpg"
 
 @Client.on_message(Filter.command("start"))
 async def start_cmd(c: Client, message: types.Message):
