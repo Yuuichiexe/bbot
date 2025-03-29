@@ -39,7 +39,7 @@ async def start_cmd(c: Client, message: types.Message):
  Supported platforms like⥮ YouTube, Spotify, Resso, Apple Music, and SoundCloud.
     """
 
-    reply = await message.reply_photo("https://files.catbox.moe/0acz0j.jpg", text, parse_mode="html", reply_markup=AddMeButton)
+    reply = await message.reply_photo("https://files.catbox.moe/0acz0j.jpg", caption=text, parse_mode="html", reply_markup=AddMeButton)
     if isinstance(reply, types.Error):
         c.logger.warning(f"Error sending start message: {reply.message}")
 
