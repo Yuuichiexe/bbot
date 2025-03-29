@@ -22,6 +22,7 @@ from src.modules.utils.play_helpers import (
 )
 from src.pytgcalls import call
 
+start_img = ""
 
 @Client.on_message(Filter.command("start"))
 async def start_cmd(c: Client, message: types.Message):
@@ -35,11 +36,9 @@ async def start_cmd(c: Client, message: types.Message):
     text = f"""
     Hey {await message.mention(parse_mode='html')}, I'm {me.first_name}, an advanced AI with a cutting-edge music player to elevate your group's interaction.
 
-Your ultimate music companion for Telegram voice chats! 
+ Apple Music is an advanced music bot with high-quality music and videos, and its AI is lightning-fast and incredibly stable. 
 
-<b>Supported Platforms:</b> Spotify, YouTube and Telegram Audio.
-
-<b>📢 Note:</b> This bot works best in groups and requires admin permissions to function.
+ Supported platforms like⥮ YouTube, Spotify, Resso, Apple Music, and SoundCloud.
     """
 
     reply = await message.reply_photo(start_img, text, parse_mode="html", reply_markup=AddMeButton)
