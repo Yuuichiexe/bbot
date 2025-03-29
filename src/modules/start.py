@@ -33,9 +33,7 @@ async def start_cmd(c: Client, message: types.Message):
         await db.add_user(chat_id)
 
     text = f"""
-    нєу {await message.mention(parse_mode='html')} 👋
-
-<b>Welcome to {me.first_name} </b>
+    Hey {await message.mention(parse_mode='html')}, I'm {me.first_name}, an advanced AI with a cutting-edge music player to elevate your group's interaction.
 
 Your ultimate music companion for Telegram voice chats! 
 
